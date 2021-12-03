@@ -1,19 +1,19 @@
 const { expect } = require("chai");
 const { ethers } = require("hardhat");
 
-describe("QtumNFT", function() {
-    it("Should return the new qtum nft once it's changed", async function() {
-        const QtumNFT = await ethers.getContractFactory("QtumNFT");
-        const qtumNFT = await QtumNFT.deploy();
+describe("HtmlcoinNFT", function() {
+    it("Should return the new htmlcoin nft once it's changed", async function() {
+        const HtmlcoinNFT = await ethers.getContractFactory("HtmlcoinNFT");
+        const htmlcoinNFT = await HtmlcoinNFT.deploy();
 
-        await qtumNFT.deployed();
-        const res = await qtumNFT.createNFTItem(
+        await htmlcoinNFT.deployed();
+        const res = await HtmlcoinNFT.createNFTItem(
             "cat",
-            "https://www.baidu.com",
+            "https://bashupload.com",
             "cat",
             10
         );
-        const r1 = await qtumNFT.getNFTInfoById(0);
+        const r1 = await htmlcoinNFT.getNFTInfoById(0);
         console.log(r1);
     });
 });
