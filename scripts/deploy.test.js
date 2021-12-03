@@ -1,10 +1,10 @@
 const { ethers } = require("hardhat");
 
 async function main() {
-    const QtumNFT = await ethers.getContractFactory("QtumNFT");
-    const qtumNFT = await QtumNFT.deploy();
-    await qtumNFT.deployed();
-    console.log(qtumNFT.address);
+    const HtmlcoinNFT = await ethers.getContractFactory("HtmlcoinNFT");
+    const htmlcoinNFT = await HtmlcoinNFT.deploy();
+    await htmlcoinNFT.deployed();
+    console.log(htmlcoinNFT.address);
 }
 
 main()
