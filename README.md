@@ -1,3 +1,3 @@
-# QTUM-NFT
+# HTMLCOIN-NFT
 
-Qtum nft solidity contract
+Htmlcoin nft solidity contract
