@@ -2,8 +2,8 @@
 pragma solidity ^0.8.0;
 import "../node_modules/@openzeppelin/contracts/token/ERC1155/ERC1155.sol";
 
-contract QtumNFT is ERC1155 {
-    constructor() ERC1155("https://qtum.info/api/item/{id}.json") {
+contract HtmlcoinNFT is ERC1155 {
+    constructor() ERC1155("https://info.htmlcoin.com/api/item/{id}.json") {
     }
 
     struct WalletNFTInfo {
